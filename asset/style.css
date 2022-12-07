@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Alexandria", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: -20px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-size: 2.5em;
+  background: lightblue;
+  transform: translateY(-20px);
+}
+
+.headerName {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.headerNameMark {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.headerSearchbar {
+  width: 500px;
+  height: 40px;
+  margin-left: 100px;
+  padding: 8px 0 5px 15px;
+  border: 2px solid black;
+  border-radius: 50px 0px 0px 50px;
+  font-size: 0.5em;
+  font-weight: 200;
+  background: white;
+  cursor: text;
+}
+
+.headerNameMenu-checkbox {
+  display: none;
+}
+
+.headerNameMenu {
+  margin-top: 7px;
+  margin-left: 7px;
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.NavList {
+  position: fixed;
+  top: 100px;
+  padding-left: 10px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background: rgb(185, 231, 247);
+}
+
+.NavListItem {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+/* .NavExtendedList {
+  position: fixed;
+  top: 100px;
+  padding-left: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background: rgb(185, 231, 247);
+}
+
+.NavExtendedListItem {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+} */
+
+#NavListTop {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+#NavExtendedListTop {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.headerNameLogo {
+  margin-left: 22px;
+  margin-right: 3px;
+  /* background: #000; */
+  cursor: pointer;
+}
+
+.headerNameLogoSearch {
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid black;
+  border-radius: 0 50px 50px 0;
+  background: gray;
+  cursor: pointer;
+}
+
+.headerNameCommentary {
+  position: absolute;
+  opacity: 0.7;
+  top: calc(55% + 2px);
+  margin: 10px;
+  padding: 10px;
+  font-size: 0.3em;
+  background: gray;
+  color: aliceblue;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+#LogoHeaderName {
+  left: calc(9% - 0px);
+}
+
+.headerNameMark:hover .headerNameCommentary {
+  visibility: visible;
+}
+
+#LogoSearch {
+  left: calc(60% - 5px);
+}
+
+.headerNameLogoSearch:hover .headerNameCommentary {
+  visibility: visible;
+}
+
+#LogoMicro {
+  left: calc(64% - 0px);
+}
+
+.headerNameLogoMicro:hover .headerNameCommentary {
+  visibility: visible;
+}
+
+#LogoUpload {
+  left: calc(82% - 2px);
+}
+
+.headerNameLogoUpload:hover .headerNameCommentary {
+  visibility: visible;
+}
+
+#LogoBell {
+  left: calc(86% + 3px);
+}
+
+.headerNameLogoBell:hover .headerNameCommentary {
+  visibility: visible;
+}
+
+.headerNameLogoMicro {
+  height: 42px;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background: lightgray;
+  cursor: pointer;
+}
+
+.headerNameLogoUpload {
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+.headerNameLogoBell {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.headerNameLogoUser {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.keywordList {
+  position: fixed;
+  padding-left: 10px;
+  height: 120px;
+  left: 100px;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(228, 224, 224);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* overflow-x: scroll; */
+}
+
+.keywordList li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: max-content;
+  height: max-content;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.keywordList li:hover {
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background: lightskyblue;
+  overflow: hidden;
+}
+
+.cards {
+  left: 140px;
+  top: 220px;
+  position: absolute;
+  padding: 0;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: -1;
+}
+
+.cardsItem {
+  height: 300px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateY(-40px);
+}
+
+.cardsItemPlay {
+  position: relative;
+  width: 60px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  left: 42%;
+  top: 40%;
+  visibility: hidden;
+  transition: 0.1s linear;
+  transition-delay: 00ms;
+}
+
+.cardsItem:hover .cardsItemPlay {
+  visibility: visible;
+}
+
+.cardsItem img {
+  border-radius: 15px;
+}
+
+.cardsItem p {
+  margin-left: 20px;
+  width: 235px;
+  color: black;
+}
+
+.cardsItemContentAuthor {
+  font-weight: 800;
+  font-size: 1.0em;
+  color: blue !important;
+  width: fit-content;
+}
+
+.cardsItemContentTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.0em;
+}
+
+.cardsItemContent img {
+  margin: 10px 20px 10px 20px;
+}
+
+.Video {
+  width: 200px;
+  position: absolute;
+  left: 350px;
+  top: 120px;
+  z-index: -1;
+}
+
+.SearchBarCards {
+  position: absolute;
+  padding-right: 10px;
+  display: grid;
+  grid-template-rows: auto;
+  z-index: -1;
+  background: rgb(185, 231, 247);
+}
+
+.CardsItem .SearchBarCardsItem {
+  z-index: -1;
+}

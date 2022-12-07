@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset\style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TuTube</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="headerName">
+        <label class="headerNameLabel">
+          <input type="checkbox" class="headerNameMenu-checkbox" />
+          <img
+            class="headerNameMenu"
+            src="asset\img\menu.png"
+            width="30px"
+            height="30px"
+          />
+        </label>
+        <div class="headerNameMark">
+          <a href="/index.html">
+            <img
+              class="headerNameLogo"
+              src="asset\img\logo_tutube.png"
+              width="23px"
+              height="23px"
+          /></a>
+          <p id="LogoHeaderName" class="headerNameCommentary">Accueil TuTube</p>
+          <a href="/index.html"><p class="headerNameTitle">TuTube</p></a>
+        </div>
+        <p class="headerSearchbar">Votre Recherche...</p>
+        <div class="headerNameLogoSearch">
+          <img src="asset\img\search_logo.png" width="25px" />
+          <p id="LogoSearch" class="headerNameCommentary">Rechercher</p>
+        </div>
+        <div class="headerNameLogoMicro">
+          <img src="asset\img\microphone_logo.png" width="25px" />
+          <p id="LogoMicro" class="headerNameCommentary">Recherche Vocale</p>
+        </div>
+        <div class="headerNameLogoUpload">
+          <p id="LogoUpload" class="headerNameCommentary">Mise en Ligne</p>
+          <img src="asset\img\upload_logo.png" width="40px" />
+        </div>
+        <div class="headerNameLogoBell">
+          <p id="LogoBell" class="headerNameCommentary">Notifications</p>
+          <img src="asset\img\bell_logo.png" width="40px" />
+        </div>
+        <div class="headerNameLogoUser">
+          <img src="asset\img\user_logo.png" width="30px" />
+        </div>
+        <div class="headerNameLogoUser">
+          <img
+            src="asset\img\blank.png"
+            width="30px"
+            style="visibility: hidden"
+          />
+          <img
+            src="asset\img\blank.png"
+            width="30px"
+            style="visibility: hidden"
+          />
+          <img
+            src="asset\img\blank.png"
+            width="30px"
+            style="visibility: hidden"
+          />
+          <img
+            src="asset\img\blank.png"
+            width="30px"
+            style="visibility: hidden"
+          />
+          <img
+            src="asset\img\blank.png"
+            width="30px"
+            style="visibility: hidden"
+          />
+        </div>
+      </div>
+    </div>
+    <nav class="Nav" style="display: none">
+      <ul class="NavList">
+        <a href="/index.html">
+          <li id="NavListTop">
+            <img src="asset\img\home_logo.png" width="30px" /> Accueil
+          </li></a
+        >
+        <li class="NavListItem">
+          <img src="asset\img\capture_logo.png" width="30px" />Photos
+        </li>
+        <li class="NavListItem">
+          <img src="asset\img\subscribe_logo.png" width="30px" />Abonnements
+        </li>
+        <li class="NavListItem">
+          <img src="asset\img\library_logo.png" width="30px" />Bibliotheque
+        </li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+        <li class="NavListItem"></li>
+      </ul>
+    </nav>
+    <ul class="keywordList" style="display: none">
+      <li>Tous</li>
+      <li>En direct</li>
+      <li>Jeux Videos</li>
+      <li>JavaScript</li>
+      <li>Musique</li>
+      <li>Algèbre</li>
+      <li>Saucisson</li>
+      <li>Montagnes</li>
+      <li>Décors</li>
+      <li>Programmation</li>
+      <li>Jeux d'Action</li>
+      <li>Questions</li>
+      <li>Equations</li>
+      <li>Dark Souls</li>
+      <li>HTML/CSS</li>
+      <li>Leçons</li>
+      <li>Python</li>
+      <li>Mix</li>
+      <li>Jeux</li>
+      <li>Feuille</li>
+      <!-- <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li> -->
+    </ul>
+    <div class="cards" style="display: none">
+      <div class="cardsItem">
+        <a href="">
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_001.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>[TTP FR] Dark Vador raconte des saloperies</p>
+            </div>
+            <p class="cardsItemContentAuthor">Leopoopeur</p>
+            <p class="cardsItemContentView">13k vues . 3heures</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_002.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] C'est de la Kaamelott</p>
+          </div>
+          <p class="cardsItemContentAuthor">Djokaire</p>
+          <p class="cardsItemContentView">7k vues . 2jours</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_003.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Code Steam 2.0 with REACT.JS! (JS, HTML , CSS)...</p>
+          </div>
+          <p class="cardsItemContentAuthor">Goose Dev</p>
+          <p class="cardsItemContentView">33,5k vues . 21min</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_004.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>
+              An Hour of Soothing and Relaxing Nintendo Music (Art by Jeremy
+              Fenske)
+            </p>
+          </div>
+          <p class="cardsItemContentAuthor">JD_Tries</p>
+          <p class="cardsItemContentView">198k vues . 3mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_005.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>#SaturdayHackerday| Windows Hacking Practice in our Homelab</p>
+          </div>
+          <p class="cardsItemContentAuthor">The Taggart Institute</p>
+          <p
+            class="cardsItemContentView"
+            style="color: white; margin: 2px; width: fit-content"
+          >
+            <span style="color: transparent">Unpeudetrichedanscet</span>
+            <span style="background: red">EN DIRECT</span>
+          </p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_006.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Minecraft Timelapse 🜊 Astral Clocktower</p>
+          </div>
+          <p class="cardsItemContentAuthor">Potomy</p>
+          <p class="cardsItemContentView">8,5k vues . 5mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_007.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>sqrt(i)</p>
+          </div>
+          <p class="cardsItemContentAuthor">blackpenredpen</p>
+          <p class="cardsItemContentView">7,5k vues . 2semaines</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_008.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Cycle</p>
+          </div>
+          <p class="cardsItemContentAuthor">King Harkinian</p>
+          <p class="cardsItemContentView">64k vues . 5mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_009.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>An Integral with many logs</p>
+          </div>
+          <p class="cardsItemContentAuthor">Michael Penn</p>
+          <p class="cardsItemContentView">4,3k vues . 6heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_010.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>The Dragon Palace - A Minecraft Timelapse (1.19)</p>
+          </div>
+          <p class="cardsItemContentAuthor">SixWings</p>
+          <p class="cardsItemContentView">400k vues . 4mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_011.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Soirée Frissons : The Calisto Protocol (PC)👽</p>
+          </div>
+          <p class="cardsItemContentAuthor" style="width: fit-content">
+            L4st-4ngel - L' ALIEN DU WEB
+          </p>
+          <p class="cardsItemContentView">712 vues . 18heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_012.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Chill Lofi Afrobeats Music 🍁 African Lofi Brown Mix</p>
+          </div>
+          <p class="cardsItemContentAuthor">AFRICAN LOFI</p>
+          <p class="cardsItemContentView">193k vues . 2ans</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_013.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Beethoven “Moonlight Sonata” for Old Elephant</p>
+          </div>
+          <p class="cardsItemContentAuthor">Paul Barton</p>
+          <p class="cardsItemContentView">6,1M vues . 2ans</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_014.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_015.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_016.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_017.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_018.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_019.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_020.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_021.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_022.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_023.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p
+            class="cardsItemContentView"
+            style="color: white; margin: 2px; width: fit-content"
+          >
+            <span style="color: transparent">Unpeudetrichedanscet</span>
+            <span style="background: red">EN DIRECT</span>
+          </p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_024.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+    </div>
+    <div class="Video" id="#idVideo004">
+      <video src="asset\video\video004.mp4" controls width="900"></video>
+    </div>
+    <div class="SearchBarCards">
+      <div style="color: transparent">
+        <p>BLANK</p>
+        <p>BLANK</p>
+        <p>BLANK</p>
+        <p>BLANK</p>
+        <p>BLANK</p>
+        <p>BLANK</p>
+        <p>BLANK</p>
+      </div>
+      <div class="cardsItem">
+        <a href="\index001.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_001.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>[TTP FR] Dark Vador raconte des saloperies</p>
+            </div>
+            <p class="cardsItemContentAuthor">Leopoopeur</p>
+            <p class="cardsItemContentView">13k vues . 3heures</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardsItem">
+        <a href="\index002.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_002.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>[TTP FR] C'est de la Kaamelott</p>
+            </div>
+            <p class="cardsItemContentAuthor">Djokaire</p>
+            <p class="cardsItemContentView">7k vues . 2jours</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardsItem">
+        <a href="\index003.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_003.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>Code Steam 2.0 with REACT.JS! (JS, HTML , CSS)...</p>
+            </div>
+            <p class="cardsItemContentAuthor">Goose Dev</p>
+            <p class="cardsItemContentView">33,5k vues . 21min</p>
+          </div>
+        </a>
+      </div>
+      <!-- <div class="cardsItem">
+        <a href="\index004.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_004.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>
+                An Hour of Soothing and Relaxing Nintendo Music (Art by Jeremy
+                Fenske)
+              </p>
+            </div>
+            <p class="cardsItemContentAuthor">JD_Tries</p>
+            <p class="cardsItemContentView">198k vues . 3mois</p>
+          </div>
+        </a>
+      </div> -->
+      <div class="cardsItem">
+        <a href="\index005.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_005.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>#SaturdayHackerday| Windows Hacking Practice in our Homelab</p>
+            </div>
+            <p class="cardsItemContentAuthor">The Taggart Institute</p>
+            <p
+              class="cardsItemContentView"
+              style="color: white; margin: 2px; width: fit-content"
+            >
+              <span style="color: transparent">Unpeudetrichedanscet</span>
+              <span style="background: red">EN DIRECT</span>
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="cardsItem">
+        <a href="\index006.html">
+          <img class="cardsItemPlay" src="asset\img\logo_tutube.png" />
+          <div class="cardsItemContent">
+            <img src="asset\img\video_image_006.jpg" width="300px" />
+            <div class="cardsItemContentTitle">
+              <img src="asset\img\user_logo.png" width="30px" />
+              <p>Minecraft Timelapse 🜊 Astral Clocktower</p>
+            </div>
+            <p class="cardsItemContentAuthor">Potomy</p>
+            <p class="cardsItemContentView">8,5k vues . 5mois</p>
+          </div>
+        </a>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_007.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>sqrt(i)</p>
+          </div>
+          <p class="cardsItemContentAuthor">blackpenredpen</p>
+          <p class="cardsItemContentView">7,5k vues . 2semaines</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_008.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Cycle</p>
+          </div>
+          <p class="cardsItemContentAuthor">King Harkinian</p>
+          <p class="cardsItemContentView">64k vues . 5mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_009.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>An Integral with many logs</p>
+          </div>
+          <p class="cardsItemContentAuthor">Michael Penn</p>
+          <p class="cardsItemContentView">4,3k vues . 6heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_010.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>The Dragon Palace - A Minecraft Timelapse (1.19)</p>
+          </div>
+          <p class="cardsItemContentAuthor">SixWings</p>
+          <p class="cardsItemContentView">400k vues . 4mois</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_011.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Soirée Frissons : The Calisto Protocol (PC)👽</p>
+          </div>
+          <p class="cardsItemContentAuthor" style="width: fit-content">
+            L4st-4ngel - L' ALIEN DU WEB
+          </p>
+          <p class="cardsItemContentView">712 vues . 18heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_012.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Chill Lofi Afrobeats Music 🍁 African Lofi Brown Mix</p>
+          </div>
+          <p class="cardsItemContentAuthor">AFRICAN LOFI</p>
+          <p class="cardsItemContentView">193k vues . 2ans</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_013.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>Beethoven “Moonlight Sonata” for Old Elephant</p>
+          </div>
+          <p class="cardsItemContentAuthor">Paul Barton</p>
+          <p class="cardsItemContentView">6,1M vues . 2ans</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_014.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_015.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_016.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_017.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_018.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_019.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_020.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_021.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_022.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_023.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p
+            class="cardsItemContentView"
+            style="color: white; margin: 2px; width: fit-content"
+          >
+            <span style="color: transparent">Unpeudetrichedanscet</span>
+            <span style="background: red">EN DIRECT</span>
+          </p>
+        </div>
+      </div>
+      <div class="cardsItem">
+        <div class="cardsItemContent">
+          <img src="asset\img\video_image_024.jpg" width="300px" />
+          <div class="cardsItemContentTitle">
+            <img src="asset\img\user_logo.png" width="30px" />
+            <p>[TTP FR] Dark Vador raconte des saloperies</p>
+          </div>
+          <p class="cardsItemContentAuthor">Leopoopeur</p>
+          <p class="cardsItemContentView">13k vues . 3heures</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
